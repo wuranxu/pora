@@ -14,6 +14,9 @@
     "icon": "./logo.ico",
     "mac": {
       "category": "woody.app.pora"
+    },
+    "electronDownload": {
+      "mirror": "https://npm.taobao.org/mirrors/electron/"
     }
   },
   "scripts": {
