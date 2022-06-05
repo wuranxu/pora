@@ -4,7 +4,7 @@
 
   它大概长这样，因为代码写的丑，就不开源了，只放了打包后的`代码`。受mdnice的启发，以bytemd编辑器为内核。
 
-![](http://oss.pity.fun/picture/20220605230228.png)
+![](https://static.pity.fun/picture/20220605230228.png)
 
   如果你需要写文章并复制样式到`微信公众号`，那这个软件肯定对你有所帮助~
 
@@ -28,7 +28,7 @@
 
   对比typora的话，暂时还没有自定义主题的功能，但是系统提供了一些还不错的主题样式。
 
-![](http://oss.pity.fun/picture/20220605230523.png)
+![](https://static.pity.fun/picture/20220605230523.png)
 
 - [x] 复制到公众号
 
