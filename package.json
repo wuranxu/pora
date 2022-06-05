@@ -1,0 +1,83 @@
+{
+  "private": true,
+  "name": "pora",
+  "version": "0.0.1",
+  "author": "woody",
+  "homepage": ".",
+  "main": "main.js",
+  "build": {
+    "appId": "pora",
+    "files": [
+      "!**/node_modules/*"
+    ],
+    "includeSubNodeModules": false,
+    "icon": "./logo.ico",
+    "mac": {
+      "category": "woody.app.pora"
+    }
+  },
+  "scripts": {
+    "app:dir": "electron-builder --dir",
+    "package": "electron-packager ./ --all --out ./poraRelease --overwrite --icon=./logo.ico --arch=x64",
+    "app:dist": "electron-builder",
+    "electron:serve": "electron --remote-debugging-port=9922 .",
+    "electron:start": "electron .",
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@bytemd/plugin-breaks": "^1.10.13",
+    "@bytemd/plugin-footnotes": "^1.10.13",
+    "@bytemd/plugin-frontmatter": "^1.10.13",
+    "@bytemd/plugin-gemoji": "^1.10.13",
+    "@bytemd/plugin-gfm": "^1.10.13",
+    "@bytemd/plugin-highlight": "^1.10.13",
+    "@bytemd/plugin-highlight-ssr": "^1.10.13",
+    "@bytemd/plugin-math": "^1.10.13",
+    "@bytemd/plugin-medium-zoom": "^1.10.13",
+    "@bytemd/plugin-mermaid": "^1.10.13",
+    "@bytemd/react": "^1.10.13",
+    "antd": "^4.20.6",
+    "bytemd": "^1.10.13",
+    "juice": "^8.0.0",
+    "parse5": "^6.0.1",
+    "react": "17.x",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "17.x",
+    "react-split-pane": "^0.1.92",
+    "request": "^2.88.2",
+    "umi": "^3.5.24",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.24",
+    "electron": "^19.0.2",
+    "electron-builder": "^23.0.3",
+    "electron-packager": "^15.5.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  },
+  "__npminstall_done": false
+}
