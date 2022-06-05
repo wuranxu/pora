@@ -8,13 +8,13 @@
 
   如果你需要写文章并复制样式到`微信公众号`，那这个软件肯定对你有所帮助~
 
-#### Windows
+#### Windows(只支持64位)
 
-  [下载地址]()
+  [下载地址](https://github.com/wuranxu/pora/releases/download/v0.0.1/pora-0.0.1-x64.zip)
 
 #### MacOs
 
-  [下载地址]()
+  [下载地址](https://github.com/wuranxu/pora/releases/download/v0.0.1/pora-0.0.1.dmg)
   
 ### 使用说明
 
